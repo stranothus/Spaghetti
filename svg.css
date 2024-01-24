@@ -1,0 +1,13 @@
+g[stroke-linecap="round"] {
+    cursor: pointer;
+    transition: 0.15s all;
+    filter: drop-shadow(0px 0px 0px #30303000) saturate(0.75);
+}
+g[stroke-linecap="round"]:hover {
+    transition: 0.15s all;
+    filter: drop-shadow(1px 4px 5px #303030C0) saturate(1.5);
+}
+
+text {
+    pointer-events: none;
+}
