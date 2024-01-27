@@ -1,11 +1,11 @@
 g[stroke-linecap="round"] {
     cursor: pointer;
     transition: 0.15s all;
-    filter: drop-shadow(0px 0px 0px #30303000) saturate(0.75);
+    filter: drop-shadow(0px 0px 0px #F0F0F000) brightness(0.75);
 }
 g[stroke-linecap="round"]:hover {
     transition: 0.15s all;
-    filter: drop-shadow(1px 4px 5px #303030C0) saturate(1.5);
+    filter: drop-shadow(0 0 15px #F0F0F050) brightness(1.0);
 }
 
 text {
