@@ -37,6 +37,11 @@ svg.addEventListener("click", (e) => {
 
 let drag = false;
 
-        header.textContent = text;
+scrollWindow.parentElement.addEventListener("pointerdown", () => drag = true);
+addEventListener("pointerup", () => drag = false);
+addEventListener("pointermove", e => {
+    if(drag) {
+        scrollWindow.scrollLeft -= e.movementX;
+        scrollWindow.scrollTop -= e.movementY;
     }
 });
