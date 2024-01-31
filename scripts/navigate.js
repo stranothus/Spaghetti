@@ -266,12 +266,10 @@ function scrollTo(parent, target) {
 
     parent.scrollTo({
         left: targetRect.left - parentRect.width + parent.scrollLeft + targetRect.width / 2,
-        top: targetRect.top - parentRect.height / (5 / 3) + parent.scrollTop + targetRect.height / 2,
+        top: targetRect.top - parentRect.height + parent.scrollTop + targetRect.height / 2,
         behavior: "smooth"
     });
 }
-
-setTimeout(() => scrollTo(scrollWindow, [...svg.getElementsByTagName("text")].find(e => e.parentElement.textContent.trim() === "Me")), 500);
 
 svg.addEventListener("click", (e) => {
     if(e.target.parentElement.getAttribute("stroke-linecap") === "round") {
@@ -295,3 +293,6 @@ addEventListener("pointermove", e => {
         scrollWindow.scrollTop -= e.movementY;
     }
 });
+
+setTimeout(() => scrollTo(scrollWindow, [...svg.getElementsByTagName("text")].find(e => e.parentElement.textContent.trim() === "Me")), 500);
+pageContainer.innerHTML = `<h2>${pagesJSON[0].title}</h2>${pagesJSON[0].content}`;
