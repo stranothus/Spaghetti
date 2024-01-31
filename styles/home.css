@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@500&family=Poor+Story&display=swap');
+
 @keyframes zoomIn {
     from {
         width: 50vw;
@@ -54,4 +56,73 @@
     width: 150vw;
     margin: 0;
     background: #100020;
+}
+
+#header {
+    background-color: #7050EF;
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 50px 0;
+    border-bottom: 5px solid #200050;
+    box-shadow: 5px 0 5px 3px #000000;
+}
+#header h1 {
+    font-family: 'Poor Story', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    color: #100030;
+}
+#header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #E0C0FF;
+}
+
+#page-container {
+    width: 80vw;
+    min-height: calc(100vh - 30vw - 310px);
+    padding: 25px 10vw 100px;
+    background-color: #200050;
+    color: #F0F0FF;
+    margin: 50px 0 0 0;
+    border-top: 5px solid #200050;
+    box-shadow: -5px 0 5px 3px #000000;
+}
+#page-container h2 {
+    font-family: 'Montserrat', san-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0 10vw;
+}
+#page-container p {
+    font-family: 'Montserrat', san-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 50px 0;
+    letter-spacing: 0.75px;
+}
+#page-container blockquote {
+    font-family: 'Montserrat', san-serif;
+    font-size: 1.2rem;
+    margin: 25px 0;
+    padding: 10px 20px;
+    background-color: #7050EF;
+    width: 50vw;
+    border-left: 5px solid #100020;
+    border-radius: 0 15px 15px 0;
+}
+#page-container .img {
+    width: 100vw;
+    height: 20vw;
+    margin: 50px -10vw;
+    background-position: 0;
+    background-attachment: fixed;
+    background-size: contain;
+    border-top: 5px solid #200050;
+    border-bottom: 5px solid #200050;
+    box-shadow: 0 0 5px 3px inset #000000;
 }
