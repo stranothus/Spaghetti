@@ -29,6 +29,7 @@
     height: 30vw;
     border-radius: 25px;
     position: relative;
+    user-select: none;
 }
 #navigation::after {
     content: "";
