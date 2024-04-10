@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@500&family=Poor+Story&display=swap');
 
-@keyframes zoomIn {
-    from {
-        width: 50vw;
-    }
-    to {
-        width: 150vw;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -53,7 +44,7 @@
     display: none;
 }
 #excalidraw-svg {
-    animation: 0.5s ease 0s 1 zoomIn;
+    position: relative;
     width: 150vw;
     margin: 0;
     background: #100020;

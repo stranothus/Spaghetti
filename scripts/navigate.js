@@ -71,14 +71,15 @@ const pagesJSON = [
     }
 ];
 
-function scrollTo(parent, target) {
+function scrollTo(parent, target, behavior="smooth") {
     const parentRect = parent.getBoundingClientRect();
     const targetRect = target.getBoundingClientRect();
+    const svgRect = svg.getBoundingClientRect();
 
     parent.scrollTo({
         left: targetRect.left - parentRect.width + parent.scrollLeft + targetRect.width / 2,
-        top: targetRect.top - parentRect.height + parent.scrollTop + targetRect.height / 2 + 200,
-        behavior: "smooth"
+        top: targetRect.top - targetRect.height - svgRect.top + targetRect.height / 4,
+        behavior: behavior
     });
 }
 
@@ -105,5 +106,18 @@ addEventListener("pointermove", e => {
     }
 });
 
-setTimeout(() => scrollTo(scrollWindow, [...svg.getElementsByTagName("text")].find(e => e.parentElement.textContent.trim() === "Me")), 500);
 pageContainer.innerHTML = `<h2>${pagesJSON[0].title}</h2>${pagesJSON[0].content}`;
+function zoomIn() {
+    const intervalIncrease = window.innerWidth / (1000 / 60);
+
+    const interval = setInterval(() => {
+        svg.style.width = svg.getBoundingClientRect().width + intervalIncrease;
+        scrollTo(scrollWindow, [...svg.getElementsByTagName("text")].find(e => e.parentElement.textContent.trim() === "Me"), "instant");
+    }, 1000 / 60);
+
+    setTimeout(() => clearInterval(interval), 200);
+}
+
+scrollTo(scrollWindow, [...svg.getElementsByTagName("text")].find(e => e.parentElement.textContent.trim() === "Me"), "instant");
+svg.style.width = `${window.innerWidth * 0.5}px`;
+setTimeout(zoomIn, 100);
