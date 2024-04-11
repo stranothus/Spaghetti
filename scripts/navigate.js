@@ -77,8 +77,8 @@ function scrollTo(parent, target, behavior="smooth") {
     const svgRect = svg.getBoundingClientRect();
 
     parent.scrollTo({
-        left: targetRect.left - parentRect.width + parent.scrollLeft + targetRect.width / 2,
-        top: targetRect.top - targetRect.height - svgRect.top + targetRect.height / 4,
+        left: targetRect.left - svgRect.left + targetRect.width / 2 - parentRect.width / 2,
+        top: targetRect.top - svgRect.top + targetRect.height / 2 - parentRect.height / 2,
         behavior: behavior
     });
 }
@@ -118,6 +118,5 @@ function zoomIn() {
     setTimeout(() => clearInterval(interval), 200);
 }
 
-scrollTo(scrollWindow, [...svg.getElementsByTagName("text")].find(e => e.parentElement.textContent.trim() === "Me"), "instant");
-svg.style.width = `${window.innerWidth * 0.5}px`;
-setTimeout(zoomIn, 100);
+svg.style.width = `${window.innerWidth * 1}px`;
+scrollTo(scrollWindow, [...svg.getElementsByTagName("text")].find(e => e.parentElement.textContent.trim() === "Me"), "smooth");
