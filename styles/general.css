@@ -77,14 +77,24 @@
     width: 100vw;
     height: 20vw;
     margin: 50px -10vw;
-    /*
-    background-position: 0;
-    background-attachment: fixed;
-    background-size: contain;
-    */
     border-top: 5px solid #200050;
     border-bottom: 5px solid #200050;
     box-shadow: 0 0 5px 3px inset #000000;
+}
+
+#marquee-parent {
+    position: relative;
+    text-align: center;
+}
+#marquee {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: #100030;
+    box-shadow: 0 0 5px 3px inset #000000;
+    border-radius: 10px;
+    border: 5px solid #200050;
+    padding: 10px;
 }
 
 #footer {

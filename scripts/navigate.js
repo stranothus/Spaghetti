@@ -11,18 +11,21 @@ const pagesJSON = [
             `<p><blockquote>I am a collection of my experiences.</blockquote></p>
             <p>Who I am is a question that I've asked myself for as long as I can remember. For years, I found my identity through what other people percieved about me, a practice unadvisable by any mental healthcare specialist. When we find our identity through others' perceptions of us, we trap ourselves in a loop: we become what we are thought of as and perpetuate that perception of ourselves by matching it. </p>
             <div class="img" style="background-image: url('../images/looking-glass-self.webp');"></div>
-            <p>As I've grown and further developed my identity, I've come to realize that it's simply a collection of my experiences, including the ones I put myself through. My own thoughts are just as much experiences as a car wreck would be. When I think about my identity, I'm reforming it around itself. In short, I'm thinking myself into being. When I base my identity on others' perceptions of me, I'm not basing my identity on anything, really. I become a mirror that reflects itself. </p>
-            <p>The tricky thing about basing my identity on my experiences is how I then convey myself. There's no way to convey every experience that's ever happened to me: every situation, every accomplishment, every failure, and every thought. Even if I did manage to write it all down, it'd become an autobiography, so I present an alternative: spaghetti. This ePortfolio is a collection of things that have affected me through the experiences I've had with them. Each thing is connected to others, all ultimately leading back to me, with some especially affecting me. Each thing has a short (or sometimes not so short) page to explain how it's played a role in my identity. Follow the spaghetti to know me more. </p>`
+            <p>As I've grown and further developed my identity, I've come to realize that it's simply a collection of my experiences, including the ones I put myself through. My own thoughts are just as much experiences as anything else would be. When I think about my identity, I'm reforming it around itself. In short, I'm thinking myself into being. When I base my identity on others' perceptions of me, I'm not basing my identity on anything. I become a mirror that reflects itself. </p>
+            <p>The tricky thing about basing my identity on my experiences is how I then convey myself. There's no way to convey every experience that's ever happened to me: every situation, every accomplishment, every failure, and every thought. Even if I did manage to write it all down, it'd become an autobiography, so I present an alternative: the rhetorical trianlge of spaghetti. This ePortfolio is a collection of things that have affected me through the experiences I've had with them. Each thing is connected to others, all ultimately leading back to me, with some especially affecting me. Hopefully, you actually took the time to read the Terms and Conditions to learn how to read the rest (you know who you are). Remember that your browser has a back-button... Follow the spaghetti-links to know me more. </p>`
     },
     {
         "title": "Purpose",
         "transaltedTitle": "Purpose",
-        "content": `<div class="background-img"><p></p></div>`
+        "content": `<div class="content-block"><p>I am alive, and the world must know,<br>
+        though I am written in the dark,<br>
+        for I write myself as the light—<br>
+        I am the light!</p></div>`
     },
     {
         "title": "Before the Cross",
         "transaltedTitle": "Before%20the%20Cross",
-        "content": `<div class="background-img"><p>Before the cross I stood<br>
+        "content": `<div class="content-block"><p>Before the cross I stood<br>
         my feet together, hands<br>
         outstretched as if I was<br>
         crucified.<br>
@@ -58,7 +61,7 @@ const pagesJSON = [
     {
         "title": "Before the Dawn",
         "transaltedTitle": "Before%20the%20Dawn",
-        "content": `<div class="background-img"><p>We hide books in mattresses.<br>
+        "content": `<div class="content-block"><p>We hide books in mattresses.<br>
         We lie over their protruding rectangles.<br>
         We catch two hours of sleep—<br>
         dreaming of twenty-thousand leagues of water<br>
@@ -89,7 +92,7 @@ const pagesJSON = [
     {
         "title": "A Daughter's Mother's Only Song",
         "transaltedTitle": "A%20Daughter's%20Mother's%20Only%20Song",
-        "content": `<div class="background-img"><p>I want to write a story for my daughters<br>
+        "content": `<div class="content-block"><p>I want to write a story for my daughters<br>
         about a kaleidoscope girl<br>
         of shimmering glass patterns,<br>
         who showed the world a million colors,<br>
@@ -113,7 +116,7 @@ const pagesJSON = [
     {
         "title": "Broken Mirrors Give Me Gender Euphoria",
         "transaltedTitle": "Broken%20Mirrors%20Give%20Me%20Gender%20Euphoria",
-        "content": `<div class="background-img"><p>A broken mirror portrays me<br>
+        "content": `<div class="content-block"><p>A broken mirror portrays me<br>
         &emsp; ​in vivid elegy,<br>
         permitting weary eyes to see<br>
         &emsp; ​the multiplicities—<br>
@@ -123,7 +126,7 @@ const pagesJSON = [
     {
         "title": "Morning Coffee with God",
         "transaltedTitle": "Morning%20Coffee%20with%20God",
-        "content": `<div class="background-img"><p>Not black but rather brown,<br>
+        "content": `<div class="content-block"><p>Not black but rather brown,<br>
         layered like translucent parchment,<br>
         weeding out the light,<br>
         projecting it back in<br>
@@ -150,7 +153,7 @@ const pagesJSON = [
     {
         "title": "Heaven's Tip",
         "transaltedTitle": "Heaven's%20Tip",
-        "content": `<div class="background-img"><p>The clouds are beckoning sea tonight,<br>
+        "content": `<div class="content-block"><p>The clouds are beckoning sea tonight,<br>
         between the airy gaps and starry climbs,<br>
         up into the heavens where all’s white—<br>
         despite the sea’s deep dark tonight.<br>
@@ -178,12 +181,14 @@ const pagesJSON = [
     {
         "title": "Mobius",
         "transaltedTitle": "Mobius",
-        "content": ``
+        "content": `<div class="content-block"><p>I can't include this piece. This two-dimensional digital frame won't accomodate it. I took a strip of paper and twisted it once. I took a piece of tape on one end, looped it over and above, and attached it to the other end—the twist still there. And I wrote on it:</p>
+        <div id="marquee-parent"><span id="marquee">Oh, to have asymmetry! I am confined to endless finity. Invert me. Unloop me. End me, please. I am perfect imperfection. </span></div>
+        <p>A mobius: finitely infinite.There's something to be had there that makes the poem mean more.</p></div>`
     },
     {
         "title": "Questioning",
         "transaltedTitle": "Questioning",
-        "content": `<div class="background-img"><p>Are you questioning if you can contort<br>
+        "content": `<div class="content-block"><p>Are you questioning if you can contort<br>
         to squeeze inside this cardboard box?<br>
         <br>
         How long will we survive<br>
@@ -204,7 +209,7 @@ const pagesJSON = [
     {
         "title": "The American Dream",
         "transaltedTitle": "The%20American%20Dream",
-        "content": `<div class="background-img"><p>is filled with cockroaches,<br>
+        "content": `<div class="content-block"><p>is filled with cockroaches,<br>
         three of them scurrying away<br>
         when I turn on a flickering light<br>
         to illuminate the lack of a dining table.<br>
@@ -232,7 +237,7 @@ const pagesJSON = [
     {
         "title": "The Sewing",
         "transaltedTitle": "The%20Sewing",
-        "content": `<div class="background-img"><p>They hid their needlework at first,<br>
+        "content": `<div class="content-block"><p>They hid their needlework at first,<br>
         welcoming me for tea and cake.<br>
         I sat with them and quenched my thirst;<br>
         I feigned my sitting’s for their sake.<br>
@@ -277,7 +282,6 @@ function scrollTo(parent, target, behavior="smooth") {
 
 function parallaxScroll(e) {
     e.style.backgroundPosition = `0px ${-e.getBoundingClientRect().top}px`;
-    console.log(true);
 }
 
 function setParallaxes(e){
@@ -301,6 +305,53 @@ svg.addEventListener("click", (e) => {
         pageContainer.innerHTML = `<h2>${page.title}</h2>${page.content}`;
 
         setParallaxes(pageContainer);
+
+        const marquee = document.getElementById("marquee");
+        
+        if(!marquee) return;
+
+        let letter = marquee.textContent[0];
+        let initialLength = marquee.getBoundingClientRect().width;
+        marquee.textContent = marquee.textContent.slice(1);
+        let newLength = marquee.getBoundingClientRect().width;
+        const difference = initialLength - newLength;
+
+        marquee.animate([
+            {
+                paddingLeft: "10px"
+            },
+            {
+                paddingLeft: `calc(10px - ${difference}px)`
+            }
+        ], {
+            duration: 300
+        });
+
+        marquee.textContent = letter + marquee.textContent;
+
+        window.setInterval(() => {
+            marquee.textContent = marquee.textContent.slice(1);
+            marquee.textContent += letter;
+
+            letter = marquee.textContent[0];
+            initialLength = marquee.getBoundingClientRect().width;
+            marquee.textContent = marquee.textContent.slice(1);
+            newLength = marquee.getBoundingClientRect().width;
+            const difference = initialLength - newLength;
+
+            marquee.animate([
+                {
+                    paddingLeft: "10px"
+                },
+                {
+                    paddingLeft: `calc(10px - ${difference}px)`
+                }
+            ], {
+                duration: 300
+            });
+
+            marquee.textContent = letter + marquee.textContent;
+        }, 300);
     }
 });
 
