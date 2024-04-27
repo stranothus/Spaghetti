@@ -275,6 +275,22 @@ function scrollTo(parent, target, behavior="smooth") {
     });
 }
 
+function parallaxScroll(e) {
+    e.style.backgroundPosition = `0px ${-e.getBoundingClientRect().top}px`;
+    console.log(true);
+}
+
+function setParallaxes(e){
+    const imgs = e.getElementsByClassName("img");
+
+    if(!imgs.length) return;
+
+    [...imgs].forEach(e => {
+        parallaxScroll(e);
+        window.addEventListener("scroll", () => parallaxScroll(e));
+    });
+}
+
 svg.addEventListener("click", (e) => {
     if(e.target.parentElement.getAttribute("stroke-linecap") === "round") {
         const text = e.target.parentElement.nextSibling.nextSibling.textContent.replaceAll(/\s+/g, " ").trim();
@@ -283,6 +299,8 @@ svg.addEventListener("click", (e) => {
         parent.scrollTo(scrollWindow, e.target);
 
         pageContainer.innerHTML = `<h2>${page.title}</h2>${page.content}`;
+
+        setParallaxes(pageContainer);
     }
 });
 
@@ -299,6 +317,9 @@ addEventListener("pointermove", e => {
 });
 
 pageContainer.innerHTML = `<h2>${pagesJSON[0].title}</h2>${pagesJSON[0].content}`;
+setParallaxes(pageContainer);
+
+
 function zoomIn() {
     const intervalIncrease = window.innerWidth / (1000 / 60);
 
