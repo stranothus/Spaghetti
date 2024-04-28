@@ -12,7 +12,7 @@ const pagesJSON = [
             <p>Who I am is a question that I've asked myself for as long as I can remember. For years, I found my identity through what other people percieved about me, a practice unadvisable by any mental healthcare specialist. When we find our identity through others' perceptions of us, we trap ourselves in a loop: we become what we are thought of as and perpetuate that perception of ourselves by matching it. </p>
             <div class="img" style="background-image: url('../images/looking-glass-self.webp');"></div>
             <p>As I've grown and further developed my identity, I've come to realize that it's simply a collection of my experiences, including the ones I put myself through. My own thoughts are just as much experiences as anything else would be. When I think about my identity, I'm reforming it around itself. In short, I'm thinking myself into being. When I base my identity on others' perceptions of me, I'm not basing my identity on anything. I become a mirror that reflects itself. </p>
-            <p>The tricky thing about basing my identity on my experiences is how I then convey myself. There's no way to convey every experience that's ever happened to me: every situation, every accomplishment, every failure, and every thought. Even if I did manage to write it all down, it'd become an autobiography, so I present an alternative: the rhetorical trianlge of spaghetti. This ePortfolio is a collection of things that have affected me through the experiences I've had with them. Each thing is connected to others, all ultimately leading back to me, with some especially affecting me. Hopefully, you actually took the time to read the Terms and Conditions to learn how to read the rest (you know who you are). Remember that your browser has a back-button... Follow the spaghetti-links to know me more. </p>`
+            <p>The tricky thing about basing my identity on my experiences is how I then convey myself. There's no way to convey every experience that's ever happened to me: every situation, every accomplishment, every failure, and every thought. Even if I did manage to write it all down, it'd become an autobiography, so I present an alternative: the rhetoric of spaghetti. This ePortfolio is a collection of things that have affected me through the experiences I've had with them. Each thing is connected to others, all ultimately leading back to me, with some especially affecting me. Hopefully, you actually took the time to read the Terms and Conditions to learn how to read the rest (you know who you are). Remember that your browser has a back-button... Follow the spaghetti-links to know me more. </p>`
     },
     {
         "title": "Purpose",
@@ -48,8 +48,9 @@ const pagesJSON = [
         You know nothing, I said,<br>
         nothing of earth and pain,<br>
         with Christ-red splattered on<br>
-        earthbound-hands.<br>
-        And Christ-eyes turned to me,<br>
+        earthbound-hands.</p>
+        <div class="img" style="background-image: url('../images/christ.png');"></div>
+        <p>And Christ-eyes turned to me,<br>
         all sunk in, full of man,<br>
         and spoke: <em>So feel my heart,<br>
         sorrow-broken.<br>
@@ -111,12 +112,14 @@ const pagesJSON = [
         I will be your kaleidoscope mother,<br>
         and I will mend your fractured souls<br>
         when the world shatters you<br>
-        so that you will be kaleidoscope women.</p></div>`
+        so that you will be kaleidoscope women.</p>
+        <div class="img" style="background-image: url('../images/kaleidoscope.png');"></div></div>`
     },
     {
         "title": "Broken Mirrors Give Me Gender Euphoria",
         "transaltedTitle": "Broken%20Mirrors%20Give%20Me%20Gender%20Euphoria",
-        "content": `<div class="content-block"><p>A broken mirror portrays me<br>
+        "content": `<div class="content-block"><div class="img" style="background-image: url('../images/fractured.png');"></div>
+        <p>A broken mirror portrays me<br>
         &emsp; ​in vivid elegy,<br>
         permitting weary eyes to see<br>
         &emsp; ​the multiplicities—<br>
@@ -171,9 +174,9 @@ const pagesJSON = [
         The water roots my feet and shows<br>
         me sands from miles away from shores<br>
         I’d never seen at all before,<br>
-        and I am everything it shows.<br>
-        <br>
-        And there I stand at heaven’s tip<br>
+        and I am everything it shows.</p>
+        <div class="img" style="background-image: url('../images/beach.png');"></div>
+        <p>And there I stand at heaven’s tip<br>
         with waves that crash and grip<br>
         my soul with wondering to rip<br>
         away the earth-dust, leaving heaven’s tip.</p></div>`
@@ -230,9 +233,11 @@ const pagesJSON = [
         is filling our lungs,<br>
         a fume that clouds our thoughts<br>
         when we look up from the operation table<br>
-        at the gory truth they’ve carved from our hearts:<br>
-        <br>
-        The American Dream is filled with cockroaches.</p></div>`
+        at the gory truth they’ve carved from our hearts:</p>
+        <div class="img" style="background-image: url('../images/cockroach.png');"></div>
+        <p>The American Dream is filled with cockroaches.</p>
+        <div class="img" style="background-image: url('../images/cockroach.png');"></div>
+        </div>`
     },
     {
         "title": "The Sewing",
@@ -260,11 +265,14 @@ const pagesJSON = [
         from under my left breast and peel<br>
         the tatted skin from flesh to sew<br>
         her into all the rest, surreal<br>
-        to me and dressed with tearfull woe.<br>
-        I left my hand with needle-holes.<br>
+        to me and dressed with tearfull woe.</p>
+        <div class="img" style="background-image: url('../images/medusa.png');"></div>
+        <p>I left my hand with needle-holes.<br>
         We drank our teas and ate our cakes.<br>
         We are the weeping woman’s soul,<br>
-        and ever will we be the snakes.</p></div>`
+        and ever will we be the snakes.</p>
+        <div class="img" style="background-image: url('../images/medusa.png');"></div>
+        </div>`
     }
 ];
 

@@ -80,6 +80,9 @@
     border-top: 5px solid #200050;
     border-bottom: 5px solid #200050;
     box-shadow: 0 0 5px 3px inset #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: sepia(50%);
 }
 
 #marquee-parent {
